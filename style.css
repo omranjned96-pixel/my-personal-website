@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #080D18;
+    color: #EAF2FF;
+    line-height: 1.7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 22px 8%;
+    background: #0D1524;
+    border-bottom: 1px solid #25354D;
+}
+
+.logo {
+    color: #55A9FF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: #C0CDDF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #55A9FF;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 22px;
+}
+
+.hero {
+    padding: 65px 0;
+}
+
+.eyebrow {
+    color: #55A9FF;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.25;
+}
+
+.hero h1 span {
+    color: #55A9FF;
+}
+
+.hero h2 {
+    color: #A8CFFF;
+    font-size: 23px;
+}
+
+.hero p {
+    max-width: 620px;
+    color: #C0CDDF;
+}
+
+.card {
+    margin: 24px 0;
+    padding: 28px;
+    background: #111D30;
+    border: 1px solid #253C5A;
+    border-radius: 14px;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #6BB6FF;
+}
+
+.card p {
+    color: #C0CDDF;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    padding: 8px 15px;
+    color: #DCEBFF;
+    background: #1B2B43;
+    border: 1px solid #345477;
+    border-radius: 8px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 11px 20px;
+    background: #147DDB;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #2997F5;
+}
+
+.github-button {
+    background: #1B2B43;
+    border: 1px solid #4C83BC;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    color: #8EA8C8;
+    border-top: 1px solid #25354D;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px 16px;
+    }
+
+    .hero {
+        padding: 35px 0;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
